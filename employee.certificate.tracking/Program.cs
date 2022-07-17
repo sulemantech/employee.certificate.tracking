@@ -1,8 +1,21 @@
+using employee.certificate.tracking.Context;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration.Json;
+using Microsoft.Extensions.Configuration;
+
+
 var builder = WebApplication.CreateBuilder(args);
+
 
 // Add services to the container.
 
 builder.Services.AddControllersWithViews();
+string connString = builder.Configuration.GetConnectionString("CertificateDB");
+builder.Services.AddDbContext<ApplicationContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CertificateDB"));
+
+});
 
 var app = builder.Build();
 
