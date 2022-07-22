@@ -9,6 +9,14 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { CertificateListComponent } from './certificate-list/certificate-list.component';
+import { CertificateAddComponent } from './certificate-add/certificate-add.component';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { EmployeeAddComponent } from './employee-add/employee-add.component';
+import { HospitalListComponent } from './hospital-list/hospital-list.component';
+import { HospitalAddComponent } from './hospital-add/hospital-add.component';
+import { NotificationListComponent } from './notification-list/notification-list.component';
+import { NotificationAddComponent } from './notification-add/notification-add.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +24,15 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
     NavMenuComponent,
     HomeComponent,
     CounterComponent,
-    FetchDataComponent
+    FetchDataComponent,
+    CertificateListComponent,
+    CertificateAddComponent,
+    EmployeeListComponent,
+    EmployeeAddComponent,
+    HospitalListComponent,
+    HospitalAddComponent,
+    NotificationListComponent,
+    NotificationAddComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
